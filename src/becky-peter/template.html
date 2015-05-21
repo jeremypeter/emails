@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!-- Target IE10 phones -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <title> </title>
+  <style type="text/css">
+    /***************************************
+                GLOBAL STYLES
+    ****************************************/
+      
+      .main-td { 
+        font-family: Century Gothic, Helvetica, Arial, Tahoma, FreeSans, sans-serif;
+        font-size: 14px;
+        color: #666666;
+        line-height: 22px;
+      }
+
+      .h1 { font-size: 31px; line-height: 36px; letter-spacing: 3px;}
+      .h2 { font-size: 16px; line-height: 20px; }
+      .h3 { font-size: 14px; line-height: 18px; }
+      .h4 { font-size: 12px; line-height: 16px; }
+      .h5 { font-size: 10px; line-height: 14px; }
+
+      .p,
+      .ul { padding-bottom: 15px; }
+
+      .li { width: 1px; }
+      .ul .li { padding-right: 5px; }
+
+      .ul .ul { padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 10px; }
+      .ul tr:first-child .li + td { width: 100%;}
+
+      .references tr:first-child .li + td { width: auto;}
+      .references .li { width: 11px; }
+      /*fixes width issue in yahoo*/
+
+      .hr {
+        background-color: #666666;
+        display: block;
+        font-size: 0px;
+        height: 1px;
+        line-height: 0px;
+        padding: 0;
+      }
+      /* horizontal rule */
+ 
+      .footnote,
+      .footnote table { font-size: 10px; line-height: 13px; }
+
+
+      sup { line-height: 0; font-size: 75%; }
+      .webversion { color: #aeb4b7; font-size:10px; text-decoration:underline; }
+      .linkDivider { font-weight: lighter; padding-left: 6px; padding-right: 6px; }
+      .no-underline { text-decoration: none; }
+      .underline { text-decoration: underline; }
+      .bold { font-weight: bold; }
+      .no-link { color: #666666; text-decoration: none; cursor: text; }
+      .six-star { font-family: Georgia, Times, 'Times New Roman', serif; }  
+
+      .legal a { text-decoration: none; }
+      .legal a span { text-decoration: underline; }
+
+      .yahoo-table-fix { margin: 0 auto; }
+      /*fixes table width issue in yahoo*/
+
+      .black { color: #000001; }  
+      .white { color: #ffffff; }
+      .gold,
+      a { color: #C3A14E;}
+      .dark-gold { color: #866D31;}
+
+      .main-table { border: 1px solid #DCBD60;}
+      .headline {
+        padding-bottom: 10px
+      }
+      .headline td { 
+        border-top: 1px solid #000001;
+        border-bottom: 1px solid #000001;
+        color: #000001;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 16px;
+      }
+      
+      .button {
+        border-radius: 10px;
+        border-bottom: 3px solid #B2A7A3;
+      }
+      .button a {
+        text-decoration: none;
+        color: #000001;
+      }
+
+      /*.border table { border-top: 1px solid; border-left: 1px solid; } */
+      /*.border td {  border-bottom: 1px solid; border-right: 1px solid; } */
+      
+    /***************************************
+                 SPACING STYLES 
+    ****************************************/
+
+      .p0   { padding-top:0;padding-right:0;padding-bottom:0;padding-left:0; }
+      .p5   { padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px; }
+      .p10  { padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px; }
+      .p15  { padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px; }
+      .p20  { padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px; }
+      .p25  { padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px; }
+      .p30  { padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px; }
+      .p35  { padding-top:35px;padding-right:35px;padding-bottom:35px;padding-left:35px; }
+      .p40  { padding-top:40px;padding-right:40px;padding-bottom:40px;padding-left:40px; }
+      /* zero padding on all side*/
+
+      .ptb0  { padding-top:0;padding-bottom:0; }
+      .ptb5  { padding-top:5px;padding-bottom:5px; }
+      .ptb10 { padding-top:10px;padding-bottom:10px; }
+      .ptb15 { padding-top:15px;padding-bottom:15px; }
+      .ptb20 { padding-top:20px;padding-bottom:20px; }
+      .ptb25 { padding-top:25px;padding-bottom:25px; }
+      .ptb30 { padding-top:30px;padding-bottom:30px; }
+      .ptb35 { padding-top:35px;padding-bottom:35px; }
+      .ptb40 { padding-top:40px;padding-bottom:40px; }
+      /* Padding top and bottom */
+
+      .prl0  { padding-right:0;padding-left:0; }
+      .prl5  { padding-right:5px;padding-left:5px; }
+      .prl10 { padding-right:10px;padding-left:10px; }
+      .prl15 { padding-right:15px;padding-left:15px; }
+      .prl20 { padding-right:20px;padding-left:20px; }
+      .prl25 { padding-right:25px;padding-left:25px; }
+      .prl30 { padding-right:30px;padding-left:30px; }
+      .prl35 { padding-right:35px;padding-left:35px; }
+      .prl40 { padding-right:40px;padding-left:40px; }
+      /* Padding left and right */
+
+      .pt0  { padding-top: 0px; }
+      .pt5  { padding-top: 5px; }
+      .pt10 { padding-top: 10px; } 
+      .pt15 { padding-top: 15px; } 
+      .pt20 { padding-top: 20px; } 
+      .pt25 { padding-top: 25px; }
+      .pt30 { padding-top: 30px; }
+      .pt35 { padding-top: 35px; }
+      .pt40 { padding-top: 40px; }
+      /* padding top */
+
+      .pr0  { padding-right: 0px; } 
+      .pr5  { padding-right: 5px; }  
+      .pr10 { padding-right: 10px; }
+      .pr15 { padding-right: 15px; }
+      .pr20 { padding-right: 20px; }
+      .pr25 { padding-right: 25px; }
+      .pr30 { padding-right: 30px; }
+      .pr35 { padding-right: 35px; }
+      .pr40 { padding-right: 40px; }
+      /* padding right */
+
+      .pb5  { padding-bottom: 5px; }
+      .pb0  { padding-bottom: 0px; } 
+      .pb10 { padding-bottom: 10px; }
+      .pb15 { padding-bottom: 15px; }
+      .pb20 { padding-bottom: 20px; }
+      .pb25 { padding-bottom: 25px; }
+      .pb30 { padding-bottom: 30px; }
+      .pb35 { padding-bottom: 35px; }
+      .pb40 { padding-bottom: 40px; }
+      /* padding bottom */
+
+      .pl0  { padding-left: 0px; }
+      .pl5  { padding-left: 5px; }
+      .pl10 { padding-left: 10px; }
+      .pl15 { padding-left: 15px; }
+      .pl20 { padding-left: 20px; }
+      .pl25 { padding-left: 25px; }
+      .pl30 { padding-left: 30px; }
+      .pl35 { padding-left: 35px; }
+      .pl40 { padding-left: 40px; }
+      /* padding left */
+
+    /***************************************
+            CLIENT SPECIFIC STYLES
+    ****************************************/
+
+    /* Use on td's if you need to match line-height. NOTE: Use only on td's with text */
+    .mso-exact { mso-line-height-rule: exactly; }
+
+    .m-hide li{ display: inline; mso-hide:all;}
+    /* Fix Firefox Gmail and Outlook 2007-13 issue */
+
+    .m-hide img { max-height: 0; width: 0; font-size: 0; }
+
+    .m-hide,
+    .preheader-text { display: none; font-size: 0; max-height: 0; line-height: 0; visibility: hidden;}
+    /* Used to hide elements for mobile */      
+
+    #outlook a {padding:0;} 
+    /* Force Outlook to provide a "view in browser" menu link. */
+
+    body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/ 
+
+    #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+    /* end reset */
+
+    img {display:block; outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; font-size: 10px;} 
+    a img { border:none; }
+    /* Some sensible defaults for images*/
+
+
+    </style>
+    <!--[if gte mso 9]>
+        <style>
+          sup { font-size: 100% !important; }
+        </style> 
+      <![endif]-->
+
+    <style type="text/css" data-embed>
+
+    /***************************************
+                GLOBAL STYLES
+    ****************************************/
+
+    table { font-size: inherit; }
+    /* Prevent user agent from overriding font size e.g. Thunderbird, Lotus Notes 8.5, AOL*/
+
+    * { line-height: inherit; }
+    /* Prevent Outlook.com from overriding line-height */
+  
+    body {
+      font-family: Century Gothic, Helvetica, Arial, Tahoma, FreeSans, sans-serif;
+      font-size: 14px;
+      color: #666666;
+      line-height: 22px;
+    }
+    /* Render font family properly in Outlook */
+
+    table td {border-collapse: collapse; /*mso-line-height-rule: exactly;*/ }
+    /* Outlook 07, 10 Padding issue fix
+    Bring inline: No.*/
+
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+    /* Disguises iOS auto links */
+
+    /***************************************
+               MOBILE STYLES
+    ****************************************/
+    
+    @media only screen and (max-width: 37.5em) {
+
+      .main-table { width: 90% !important; }
+
+      .main-table table { width:100% !important; margin: 0 auto !important; }
+      
+      .block, 
+      .content, 
+      .safety { display: block; }
+      /* place content you want stacked here */
+
+      .hide { display:none !important; }
+      /* hide elements for mobile */
+
+      img { max-width: 100% !important; height: auto !important; }
+      /* large images resize down according to their parent container size */
+
+      .m-hide,
+      .m-hide img { 
+        visibility: visible !important;
+        font-size: 100% !important; 
+        display: block !important; 
+        max-height: none !important;
+        line-height: 1.5 !important;
+      }
+
+      .m-hide li { display: list-item !important;}
+      .header,
+      .content { padding: 15px; }
+      img.center { margin: 0 auto 15px; }
+      
+    }
+    </style>
+    
+</head>
+<body background="https://dl.dropboxusercontent.com/u/33604129/beckypeter.com/bg-stripe.png" yahoo="fix">
+
+  <table align="center" border="0" cellpadding="0" cellspacing="0" id="backgroundTable" width="100%">
+
+    <tr>
+      <td class="main-td ptb30">
+        <table bgcolor="#ffffff" class="main-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+
+      <!-- Start Banner -->
+          <tr>
+            <td class="image">
+              <img src="https://dl.dropboxusercontent.com/u/33604129/beckypeter.com/email/images/banner-gold.png" width="600" height="68"/>
+            </td>
+          </tr>
+      <!-- End Banner -->
+      
+      <!-- Start Header -->
+          <tr>
+            <td class="header">
+              <table class="yahoo-table-fix" align="center" border="0" cellpadding="0" cellspacing="0" width="560">
+
+                <tr>
+                  <td class="h1 black pt20" align="center">LIVING IN FAITH</td>
+                </tr>
+                <!-- end h1 header -->
+
+                <tr>
+                  <td class="h4 gold pb20" align="center">ALL IT TAKES IS A LITTLE FAITH, SPARKLE, SHINE, GLITTER, & WINE.</td>
+                </tr>
+                <!-- end h2 header -->
+
+                <!-- <tr>
+                  <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    
+                      <tr>
+                        <td >hello</td>
+                        <td><img src="images/img-becky.png" alt="Image description" width="80" height="80"/></td>
+                      </tr>
+                      
+                    </table> 
+                  </td>
+                </tr> -->
+
+              </table>
+            </td>
+          </tr>
+      <!-- End Header -->
+
+
+      <!-- Start Content -->
+          <tr>
+            <td class="content ptb20">
+              <table class="yahoo-table-fix" align="center" border="0" cellpadding="0" cellspacing="0" width="560">
+
+                 <tr>
+                   <td class="headline">
+                     <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                       <tr>
+                         <td>WELCOME BRIANNA!</td>
+                       </tr>
+                     </table> 
+                   </td>
+                 </tr>
+                 <!-- end headline -->
+
+                 <tr>
+                   <td class="p pt10">
+                    <table align="right" border="0" cellpadding="0" cellspacing="0" width="170">
+                     
+                       <tr>
+                         <td>
+                           <a href="http://www.beckypeter.com"><img class="center" src="https://dl.dropboxusercontent.com/u/33604129/beckypeter.com/email/images/img-becky.png" alt="Becky Peter" width="170" height="170"/></a>
+                         </td>
+                       </tr>
+                       
+                     </table> 
+                     <!-- END TABLE BLOCK -->
+
+                     <table align="left" border="0" cellpadding="0" cellspacing="0" width="380">
+                     
+                       <tr>
+                         <td>First off, welcome to the team! I am so excited for you and very thrilled for you to get started!  This NEW coach email has some info to help you get started off right. Also, you should have received another email from Beachbody that includes the <a href="https://www.dropbox.com/s/ribw0gurubbuh9q/7%20Day%20Quick%20Start.pdf?dl=0">7-Day Quick Start</a> guide, which is a very useful tool that will help you immensely. I highly suggest you starting with that first. It also provides you with a short list to add the names of people you would like to talk to first about your new journey as a coach. After all, as a coach, we try to live and lead positive and healthy lives and enjoy sharing our passion and journey with others. </td>
+                       </tr>
+                       
+                     </table> 
+                     <!-- END TABLE BLOCK -->
+                     
+                   </td>
+                 </tr>
+
+                 <tr>
+                   <td class="p">I also definitely want to do a “Getting Started Right” (GSR) call with you as soon as you can, so we can go over some things in more detail. So please be sure to schedule your appointment.  </td>
+                 </tr>
+                 <!-- end paragraph -->
+
+                 <tr>
+                   <td class="p">Prior to the call, please make sure you write down ANY and ALL questions that you may have, so we can go over those together as well. </td>
+                 </tr>
+                 <!-- end paragraph -->
+
+                 <tr>
+                   <td class="pb15">
+                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                       <tr>
+                         <td class="hr">&nbsp;</td>
+                       </tr>  
+                     </table> 
+                   </td>
+                 </tr> 
+                 <!-- end horizontal rule -->
+
+                 <tr>
+                   <td class="bold">With this email, please:</td>
+                 </tr>
+                 <!-- end paragraph -->
+
+                 <tr>
+                   <td class="ul">
+                     <table border="0" cellpadding="0" cellspacing="0">
+                       <tr>
+                         <td class="li" valign="top"><strong>1.</strong></td>
+                         <td>Print the entire email and save it for future reference.</td>
+                       </tr>
+                       <tr>
+                         <td class="li" valign="top"><strong>2.</strong></td>
+                         <td>Print the <a href="https://www.dropbox.com/s/m2xcjm5ztnzhr60/Weekly%20Action%20Plan.pdf?dl=0">Weely Action Plan</a> and <a href="https://www.dropbox.com/s/801050e8zbe8dq3/Tips%20and%20Tricks%20For%20Getting%20Started%20Right.pdf?dl=0">Tips and Tricks For Getting Started Right</a> pdfs for your guides and reference as well. <em>(Don’t feel pressured to absorb it all in one day. It will click as the days progress)</em></td>
+                       </tr>
+                     </table>
+                   </td>
+                 </tr>
+                 <!-- end unordered list -->
+
+                 <tr>
+                   <td class="p">I highly recommend making a “to-do” list from this email, that way you feel less overwhelmed and are able to go through your list every day during your “designated” coach/business hours. In the beginning, I highly recommend setting aside at least 60 minutes daily to work on your business. It does NOT have to be all at once. It’s okay to break it down into chunks throughout the day. However, if you have more time to spend, then that will benefit you greatly because it will only help you advance in your business faster. But don’t stress too much if you don’t have more time, because let me tell you…you can do A LOT in 60 minutes if you stay focused. I will gladly go with you at the pace you feel most comfortable with.</td>
+                 </tr>
+
+                 <tr>
+                   <td class="p">Secondly, please realize that building your business with take time. It is a process that will not happen over night, but I can guarantee, that when you put in the time, work, and patience…you will see that plant begin to grow. One IMPORTANT takeaway is, <span class="underline">DO NOT</span> try to <span class="underline">SELL</span>. Find out your friends’ goals, their dreams, their vices, their strengths. You will want to help them by recommending, sharing YOUR personal fitness/life journey, by connecting and helping one person at a time (via private/personal messages). It’s all about building relationships and friendships. Developing trust and credibility with one person at a time is key!</td>
+                 </tr>
+
+                 <tr>
+                   <td class="p">If you want people to get interested in you and what you’re doing, be interested in THEM and their lives first. Realize “mass shout outs” like “buy from me,” “join me” are a turn off to most people, even if you have the best of intentions. Get interested in others and their needs and they will surely become interested in you!</td>
+                 </tr>
+                 <!-- end paragraph -->
+
+                 <tr>
+                   <td class="pb15">
+                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                       <tr>
+                         <td class="hr">&nbsp;</td>
+                       </tr>  
+                     </table> 
+                   </td>
+                 </tr> 
+                 <!-- end horizontal rule -->
+
+                 <tr>
+                   <td class="bold">Get plugged into TIPS and get FIRED UP weekly in just 2 conference calls per week:</td>
+                 </tr>
+                 <!-- end paragraph -->
+
+                 <tr>
+                   <td class="ul">
+                     <table border="0" cellpadding="0" cellspacing="0">
+                       <tr>
+                         <td class="li" valign="top"><strong>1.</strong></td>
+                         <td>Sunday nights/bi-weekly (8pm EST/5pm PST) – Team Rising Phoenix Nation call. This is an AWESOME call filled with priceless coach tips! To listen in LIVE, call <a href="tel:8572320155">857.232.0155</a>, enter PIN: <strong>266825#</strong></td>
+                       </tr>
+                       <tr>
+                         <td class="li" valign="top"><strong>2.</strong></td>
+                         <td>Monday (8am PST/10am CST/11am EST) – National Coach Call with coaches and guest speakers. This is call is definitely worth hopping on and is filled with coach tips from different teams and ranks! To listen LIVE, call <a href="tel:8322555055">832.255.5055</a>, enter PIN: <strong>90405</strong>. Or if you can’t listen LIVE, you can always listen the playback. Call <a href="tel:8322555065">832.225.5065</a></td>
+                       </tr>
+                     </table>
+                   </td>
+                 </tr>
+                 <!-- end unordered list -->
+
+                 <tr>
+                   <td class="p">Now that you have read all of that, let's set up our first appointment: Please click the button below and choose a day/time that works best for you.</td>
+                 </tr>
+
+                 <tr>
+                   <td class="pb15">
+                     <table class="button" bgcolor="#F5E4DE" border="0" cellpadding="0" cellspacing="0" width="60%">
+                     
+                       <tr>
+                         <td align="center">
+                          <a href="http://www.beckypeter.acuityscheduling.com/">
+                           <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                           
+                             <tr>
+                               <td align="center"><a href="http://www.beckypeter.acuityscheduling.com/">SCHEDULE YOUR APPOINTMENT TODAY!</a></td>
+                             </tr>
+                             
+                           </table> 
+                           </a>
+                         </td>
+                       </tr>
+                       
+                     </table> 
+                   </td>
+                 </tr>
+                 <!-- end button -->
+
+                 <tr>
+                   <td class="p">I'd like to be chatting with you at least once a week.</td>
+                 </tr>
+
+                 <tr>
+                   <td class="p">Can’t wait to start helping you get your priorities in check and get your business off the ground!</td>
+                 </tr>
+                 <!-- end paragraph -->
+
+                 <tr>
+                   <td>
+                     <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                     
+                       <tr>
+                          <td width="40"><a href="https://www.facebook.com/trulybeckypeter"><img src="https://dl.dropboxusercontent.com/u/33604129/beckypeter.com/email/images/icon-facebook.png" alt="Facebook" width="30" height="30" /></a></td>
+                          <td width="40"><a href="https://www.pinterest.com/trulybeckypeter/"><img src="https://dl.dropboxusercontent.com/u/33604129/beckypeter.com/email/images/icon-pinterest.png" alt="Pinterest" width="30" height="30" /></a></td>
+                          <td width="40"><a href="http://www.youtube.com/trulybeckypeter"><img src="https://dl.dropboxusercontent.com/u/33604129/beckypeter.com/email/images/icon-youtube.png" alt="Youtube" width="30" height="30" /></a></td>
+                         <td align="right"><img src="https://dl.dropboxusercontent.com/u/33604129/beckypeter.com/email/images/img-signature.png" alt="-Becky" width="154" height="68" /></td>
+                       </tr>
+                       <!-- end paragraph -->
+                       
+                     </table> 
+                   </td>
+                 </tr>
+
+              </table> 
+            </td>
+          </tr>
+      <!-- End Content -->
+
+
+        </table>
+      </td>
+    </tr>
+
+  </table>
+  <!-- end table wrapper -->
+
+</body>
+</html>
