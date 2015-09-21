@@ -193,10 +193,10 @@
     .m-hide li{ display: inline; mso-hide:all;}
     /* Fix Firefox Gmail and Outlook 2007-13 issue */
 
-    .m-hide img { max-height: 0; width: 0; font-size: 0; }
+    .m-hide img { max-height: 0; width: 0; font-size: 0; padding-top: 0; padding-bottom: 0;}
 
     .m-hide,
-    .preheader-text { display: none; font-size: 0; max-height: 0; line-height: 0; visibility: hidden;}
+    .preheader-text { display: none; font-size: 0; max-height: 0; line-height: 0; visibility: hidden; padding-top: 0; padding-bottom: 0; }
     /* Used to hide elements for mobile */      
 
     #outlook a {padding:0;} 
@@ -228,8 +228,17 @@
 
     table { font-size: inherit; }
     /* Prevent user agent from overriding font size e.g. Thunderbird, Lotus Notes 8.5, AOL*/
+    
+    b { display: none !important; }
 
-    * { line-height: inherit; }
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div{
+        line-height: inherit;
+    }
     /* Prevent Outlook.com from overriding line-height */
   
     body {
@@ -352,7 +361,7 @@
                    <td class="headline">
                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                        <tr>
-                         <td class="uppercase">Welcome Coach!</td>
+                         <td class="uppercase">Welcome *|TITLE:FNAME|*!</td>
                        </tr>
                      </table> 
                    </td>
@@ -481,7 +490,6 @@
                      
                        <tr>
                          <td align="center">
-                          <a href="http://www.beckypeter.acuityscheduling.com/">
                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
                            
                              <tr>
@@ -489,7 +497,6 @@
                              </tr>
                              
                            </table> 
-                           </a>
                          </td>
                        </tr>
                        
@@ -532,7 +539,19 @@
         </table>
       </td>
     </tr>
+    
+    <tr>
+      <td class="footnote pt0 pb10" align="center">To unsubscribe from Living In Faith, <a href="*|UNSUB|*">click here</a></td>
+    </tr>
+    <!-- end footnote -->
 
+    <!-- Begin Mobile Content -->
+    <tr class="m-hide hide">
+      <td class="m-hide hide">
+        <b>*|REWARDS|*</b>
+      </td>
+    </tr>
+    <!-- End Mobile Content -->
   </table>
   <!-- end table wrapper -->
 
