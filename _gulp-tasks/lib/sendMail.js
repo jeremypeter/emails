@@ -44,8 +44,8 @@ function sendMail(){
       smtpTransport = nodemailer.createTransport("SMTP",{
           service: "Gmail",
           auth: {
-            user: process.env.GMAIL_USER,
-            pass: process.env.GMAIL_PASS
+            user: process.env.GMAIL_BECKY,
+            pass: process.env.GMAIL_BECKY_PASS
           }
       });
 

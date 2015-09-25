@@ -33,26 +33,28 @@
       });
 
       $form.form({
-        email: {
-          identifier: 'EMAIL',
-          rules: [{
-            type: 'empty',
-            prompt: 'Please enter email address'
-          }]
-        },
-        firstName: {
-          identifier: 'FNAME',
-          rules: [{
-            type: 'empty',
-            prompt: 'Please enter your first name'
-          }]
-        },
-        lastName: {
-          identifier: 'LNAME',
-          rules: [{
-            type: 'empty',
-            prompt: 'Please enter your first name'
-          }]
+        fields: {
+          email: {
+            identifier: 'EMAIL',
+            rules: [{
+              type: 'empty',
+              prompt: 'Please enter email address'
+            }]
+          },
+          firstName: {
+            identifier: 'FNAME',
+            rules: [{
+              type: 'empty',
+              prompt: 'Please enter your first name'
+            }]
+          },
+          lastName: {
+            identifier: 'LNAME',
+            rules: [{
+              type: 'empty',
+              prompt: 'Please enter your first name'
+            }]
+          }
         }
       });
 
@@ -83,10 +85,17 @@
       dataType    : 'json',
       contentType: "application/json; charset=utf-8"
     }).done(function(data){
-      if(data.result !== 'error'){
-        $('.subscribe .description, .subscribe .image').addClass('hide');
-        $('.ui.success.message').removeClass('hide');
+      if(data.result === 'error'){
+
+        $('.ui.error.message')
+          .addClass('show')
+          .append(data.msg);  
+        return;
       }
+
+      $('.column').addClass('hide');
+      $('.ui.success.message').removeClass('hide');
+   
     }).fail(function(data){
       $('.ui.error').text('Could not connect to server. Please try again later');
     });

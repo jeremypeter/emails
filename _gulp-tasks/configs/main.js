@@ -20,7 +20,7 @@ module.exports = {
 
   // minify based on regex and use options from https://www.npmjs.org/package/html-minifier
   minify: {
-    regex: minifyRegex,
+    regex: false,
     options: { removeComments: true, removeAttributeQuotes: true, collapseWhitespace: true, minifyCSS: true, conservativeCollapse: true }
   },
 

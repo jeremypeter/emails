@@ -1,3 +1,6 @@
+# env vars
+env_vars.json
+
 # Logs
 logs
 *.log

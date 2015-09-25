@@ -3,10 +3,11 @@ module.exports = [
     type: 'list',
     name: 'from',
     message: 'From: ',
-    default: process.env.JEREMYGMAIL,
+    default: process.env.GMAIL_BECKY,
     choices: [
-      process.env.BECKYGMAIL,
-      process.env.JEREMYGMAIL,
+      "Becky Peter <beckypeterfitness@gmail.com>",
+      "Jeremy Peter <jeremywpeter@gmail.com>",
+      // process.env.JEREMYGMAIL,
       'Other'
     ] 
   },
@@ -24,8 +25,12 @@ module.exports = [
     name: 'to',
     message: 'To: ',  
     choices: [
-      process.env.BECKYGMAIL,
-      process.env.JEREMYGMAIL,
+      // process.env.BECKYGMAIL,
+      // process.env.JEREMYGMAIL,
+      "Becky Peter <beckypeterfitness@gmail.com>",
+      'Jessica Chrisman <cheerchic182@hotmail.com>',
+      'Gabrielle Montalvo <gabmontalvo87@gmail.com>',
+      'Daniele Wells <dani.wells87@gmail.com>',
       'Other'
     ] 
   },
