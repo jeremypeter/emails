@@ -4,7 +4,7 @@ var minifyRegex = /<\/body>/g;
 module.exports = {
 
   // Files to watch
-  fileGlob: ['src/**/template.html'],
+  fileGlob: ['src/**/template.html', 'src/**/partials/*.html'],
   
   // Destination folder to send test fixture for our tests
   testPath: './_gulp-tasks/tests/fixtures',
