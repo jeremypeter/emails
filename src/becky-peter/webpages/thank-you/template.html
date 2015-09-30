@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Form Testing</title>
+  <link rel="stylesheet" href="">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css' rel='stylesheet' type='text/css'/>
+
+  <style>
+    /* Semantic UI Overrides
+    ------------------------------------------------------*/
+    .hide {
+    display: none !important;
+    }
+    .show {
+        display: block !important;
+    }
+    .hide + .description {
+    padding-left: 0 !important;
+    }
+    .ui.pink.button {
+    background: #F5E4DE;
+    color: #666;
+    text-transform: uppercase;
+    }
+    .ui.pink.button:hover {
+    background: #F9EDE9;
+    color: #666;
+    }
+    .ui.subscribe.modal>.content {
+    background: url('https://dl.dropboxusercontent.com/u/33604129/beckypeter.com/bg-stripe.png');
+    }
+    .ui.subscribe.modal form {
+    padding: 1rem;
+    background-color: rgba(255, 255,255,.8);
+    border: 1px solid #DCBD60;
+    }
+    .ui.header,
+    .ui.button,
+    .ui {
+    font-family: Century Gothic, Helvetica, Arial, Tahoma, FreeSans, sans-serif !important;
+    font-weight: normal;
+    }
+    h3.ui.header {
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    }
+    .center-text { text-align: center }
+    .offer { 
+    font-size: 14px; 
+    display: block; 
+    }
+
+    @media screen and (max-width: 767px){
+    .ui.subscribe.modal .image { display: none; }
+    }
+  </style>
+</head>
+<body>
+<button class="subscribe-button" type="button">Sign Up</button>
+<div class='ui subscribe modal subscribed'>
+    <i class='close icon'></i>
+    <div class='content'>
+        <div class='ui success message'>
+            <div class='header'>
+                Success!
+            </div>
+            <p>Your subscription to our list has been confirmed.</p>
+            <p>Thank you for subscribing!</p>
+        </div>
+    </div>
+</div>
+<!-- FORM 1 -->
+
+
+
+  <script src='//code.jquery.com/jquery-2.1.3.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.js'></script>
+  <script src="script.js" type="text/javascript"></script>
+  <script>
+    var hash = window.location.hash;
+    console.log('Has', hash)
+    if(hash === '#subscribed'){
+      $('.subscribed').modal('show');
+    }
+  </script>
+</body>
+</html>
