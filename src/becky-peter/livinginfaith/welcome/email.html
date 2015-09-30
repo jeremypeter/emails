@@ -71,6 +71,8 @@
       .main-table,
       table.responsive { width: 95% !important; }
 
+      .main-td { min-width: initial !important; }
+
       .content td,
       .content table,
       .button {
@@ -162,7 +164,7 @@
 <!-- end footnote -->
 
     <tr>
-      <td class="main-td pb30" style="font-family: Century Gothic, Helvetica, Arial, Tahoma, FreeSans, sans-serif; font-size: 14px; color: #666666; line-height: 22px; padding-bottom: 30px;">
+      <td class="main-td pb30" style="font-family: Century Gothic, Helvetica, Arial, Tahoma, FreeSans, sans-serif; font-size: 14px; color: #666666; line-height: 22px; min-width: 600px; padding-bottom: 30px;">
         <table bgcolor="#ffffff" class="main-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border: 1px solid #DCBD60;">
 
         <!-- Start Header -->
@@ -179,7 +181,7 @@
 
         <tr class="social">
           <td class="pb15 social-links" style="padding-bottom: 15px;">
-            <table align="center" border="0" cellpadding="0" cellspacing="0">
+            <table class="yahoo-table-fix" align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
             
               <tr>
                  <td class="prl10 social-icon facebook" style="padding-right: 10px; padding-left: 10px; font-size: 12px; letter-spacing: 1px;"><a class="white no-underline uppercase" href="https://www.facebook.com/trulybeckypeter" style="text-decoration: none; color: #ffffff; text-transform: uppercase;">&#9656; Facebook</a></td>
@@ -289,6 +291,13 @@
     <!-- End Mobile Content -->
   </table>
   <!-- end table wrapper -->
+
+  <!-- Begin IOS Gmail App Hack -->
+  <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;">
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  </div>
 
 </body>
 </html>
