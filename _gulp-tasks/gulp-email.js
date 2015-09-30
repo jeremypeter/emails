@@ -116,5 +116,23 @@ gulp.task('browserSync', ['buildEmail'], function(){
 
 });
 
+gulp.task('server', function(){
+  
+  //the directory to our working environment
+  var base = path.resolve(config.base);
+
+  // init browser-sync
+  browserSync.init({
+    open: !notInternal,
+    rewriteRules: rewriteRules,
+    server: {
+      baseDir: base,
+      index: config.dest,
+      directory: true
+    }
+  });  
+});
+
 gulp.task('default', ['buildEmail', 'browserSync']);
+
 
