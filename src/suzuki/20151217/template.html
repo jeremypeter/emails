@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!-- Target IE10 phones -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <title>Suzuki</title>
+  <style type="text/css">
+    /***************************************
+                GLOBAL STYLES
+    ****************************************/
+      
+      .main-td { 
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        color: #7d7d7c;
+        line-height: 16px;
+        min-width: 649px;
+      }
+
+
+      .h1 { font-size: 19px; color: #393939; line-height: 22px; }
+      .h2 { font-size: 16px; color: #393939; }
+      .h3 { font-size: 14px; color: #393939; }
+      .h4 { font-size: 12px; color: #393939; }
+      .h5 { font-size: 10px; color: #393939; }
+
+      .p,
+      .ul { padding-bottom: 15px; }
+
+      .li { width: 1px; }
+      .ul .li { padding-right: 5px; }
+
+      .ul .ul { padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 10px; }
+
+      .hr {
+        background-color: #b3b3b3;
+        display: block;
+        font-size: 0px;
+        height: 1px;
+        line-height: 0px;
+        padding: 0;
+      }
+      /* horizontal rule */
+ 
+      .footnote,
+      .footnote table { font-size: 10px; line-height: 13px; }
+
+
+      sup { line-height: 0; font-size: 75%; }
+      .webversion { color: #aeb4b7; font-size:10px; text-decoration:underline; }
+      .linkDivider { font-weight: lighter; padding-left: 6px; padding-right: 6px; }
+      .no-underline { text-decoration: none; }
+      .underline { text-decoration: underline; }
+      .bold { font-weight: bold; }
+      .no-link { color: #7d7d7c; text-decoration: none; cursor: text; }
+      .six-star { font-family: Georgia, Times, 'Times New Roman', serif; }  
+
+      /*.border table { border-top: 1px solid; border-left: 1px solid; } */
+      /*.border td {  border-bottom: 1px solid; border-right: 1px solid; } */
+
+      .footer .footnote { padding-bottom: 10px;}
+      .footer tr:last-child .footnote { padding-bottom: 0; }
+      .footer td { color: #6e6e6e;}
+
+      .follow { font-size: 16px;}
+      .white { color: #ffffff;}
+      .gray { color: #6e6e6e;}
+      .yahoo-center { margin: 0 auto;}
+      .logos {
+        border-top: 1px solid #7d7d7c;
+        border-bottom: 1px solid #7d7d7c;
+      }
+      
+    /***************************************
+                 SPACING STYLES 
+    ****************************************/
+
+      .p0   { padding-top:0;padding-right:0;padding-bottom:0;padding-left:0; }
+      .p5   { padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px; }
+      .p10  { padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px; }
+      .p15  { padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px; }
+      .p20  { padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px; }
+      .p25  { padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px; }
+      .p30  { padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px; }
+      .p35  { padding-top:35px;padding-right:35px;padding-bottom:35px;padding-left:35px; }
+      .p40  { padding-top:40px;padding-right:40px;padding-bottom:40px;padding-left:40px; }
+      /* zero padding on all side*/
+
+      .ptb0  { padding-top:0;padding-bottom:0; }
+      .ptb5  { padding-top:5px;padding-bottom:5px; }
+      .ptb10 { padding-top:10px;padding-bottom:10px; }
+      .ptb15 { padding-top:15px;padding-bottom:15px; }
+      .ptb20 { padding-top:20px;padding-bottom:20px; }
+      .ptb25 { padding-top:25px;padding-bottom:25px; }
+      .ptb30 { padding-top:30px;padding-bottom:30px; }
+      .ptb35 { padding-top:35px;padding-bottom:35px; }
+      .ptb40 { padding-top:40px;padding-bottom:40px; }
+      /* Padding top and bottom */
+
+      .prl0  { padding-right:0;padding-left:0; }
+      .prl5  { padding-right:5px;padding-left:5px; }
+      .prl10 { padding-right:10px;padding-left:10px; }
+      .prl15 { padding-right:15px;padding-left:15px; }
+      .prl20 { padding-right:20px;padding-left:20px; }
+      .prl25 { padding-right:25px;padding-left:25px; }
+      .prl30 { padding-right:30px;padding-left:30px; }
+      .prl35 { padding-right:35px;padding-left:35px; }
+      .prl40 { padding-right:40px;padding-left:40px; }
+      /* Padding left and right */
+
+      .pt0  { padding-top: 0px; }
+      .pt5  { padding-top: 5px; }
+      .pt10 { padding-top: 10px; } 
+      .pt15 { padding-top: 15px; } 
+      .pt20 { padding-top: 20px; } 
+      .pt25 { padding-top: 25px; }
+      .pt30 { padding-top: 30px; }
+      .pt35 { padding-top: 35px; }
+      .pt40 { padding-top: 40px; }
+      /* padding top */
+
+      .pr0  { padding-right: 0px; } 
+      .pr5  { padding-right: 5px; }  
+      .pr10 { padding-right: 10px; }
+      .pr15 { padding-right: 15px; }
+      .pr20 { padding-right: 20px; }
+      .pr25 { padding-right: 25px; }
+      .pr30 { padding-right: 30px; }
+      .pr35 { padding-right: 35px; }
+      .pr40 { padding-right: 40px; }
+      /* padding right */
+
+      .pb5  { padding-bottom: 5px; }
+      .pb0  { padding-bottom: 0px; } 
+      .pb10 { padding-bottom: 10px; }
+      .pb15 { padding-bottom: 15px; }
+      .pb20 { padding-bottom: 20px; }
+      .pb25 { padding-bottom: 25px; }
+      .pb30 { padding-bottom: 30px; }
+      .pb35 { padding-bottom: 35px; }
+      .pb40 { padding-bottom: 40px; }
+      /* padding bottom */
+
+      .pl0  { padding-left: 0px; }
+      .pl5  { padding-left: 5px; }
+      .pl10 { padding-left: 10px; }
+      .pl15 { padding-left: 15px; }
+      .pl20 { padding-left: 20px; }
+      .pl25 { padding-left: 25px; }
+      .pl30 { padding-left: 30px; }
+      .pl35 { padding-left: 35px; }
+      .pl40 { padding-left: 40px; }
+      /* padding left */
+
+    /***************************************
+            CLIENT SPECIFIC STYLES
+    ****************************************/
+
+    /* Use on td's if you need to match line-height. NOTE: Use only on td's with text */
+    .mso-exact { mso-line-height-rule: exactly; }
+
+    .m-hide li{ display: inline; mso-hide:all;}
+    /* Fix Firefox Gmail and Outlook 2007-13 issue */
+
+    .m-hide img { max-height: 0; width: 0;}
+
+    .m-hide,
+    .preheader-text { display: none; font-size: 0; max-height: 0; line-height: 0; }
+    /* Used to hide elements for mobile */      
+
+    #outlook a {padding:0;} 
+    /* Force Outlook to provide a "view in browser" menu link. */
+
+    body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/ 
+
+    #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+    /* end reset */
+
+    img {display:block; outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; font-size: 10px;} 
+    a img { border:none; }
+    /* Some sensible defaults for images*/
+
+
+    </style>
+    <!--[if gte mso 9]>
+        <style>
+          sup { font-size: 100% !important; }
+        </style> 
+      <![endif]-->
+
+    <style type="text/css" data-embed>
+
+    /***************************************
+                GLOBAL STYLES
+    ****************************************/
+
+    table { font-size: inherit; }
+    /* Prevent user agent from overriding font size e.g. Thunderbird, Lotus Notes 8.5, AOL*/
+
+    * { line-height: inherit; }
+    /* Prevent Outlook.com from overriding line-height */
+  
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      color: #7d7d7c;
+      line-height: 16px;
+    }
+    /* Render font family properly in Outlook */
+
+    table td {border-collapse: collapse; /*mso-line-height-rule: exactly;*/ }
+    /* Outlook 07, 10 Padding issue fix
+    Bring inline: No.*/
+
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    .footer a { color: inherit !important; }
+
+    </style>
+    
+</head>
+<body yahoo="fix">
+
+  <table align="center" border="0" cellpadding="0" cellspacing="0" id="backgroundTable" width="100%">
+
+    <tr>
+      <td class="main-td">
+        <table class="main-table" align="center" border="0" cellpadding="0" cellspacing="0" width="649">
+
+      <!-- Start Header -->
+          <tr>
+            <td class="header pb30">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                <tr>
+                  <td>
+                      <a href="http://www.suzukicycles.com/">
+                          <img src="images/btn-suzuki.png" width="170" height="70" alt="Suzuki Home">
+                      </a>
+                  </td>
+                  <td>
+                      <a href="http://www.suzukicycles.com/Product Lines/Cycles.aspx?sc_lang=en">
+                          <img src="images/btn-motorcycles.png" width="108" height="70" alt="Motorcycles">
+                      </a>
+                  </td>
+                  <td>
+                      <a href="http://www.suzukicycles.com/Product Lines/Scooters.aspx?sc_lang=en">
+                          <img src="images/btn-scooters.png" width="104" height="70" alt="Scooters">
+                      </a>
+                  </td>
+                  <td>
+                      <a href="http://www.suzukicycles.com/Product Lines/ATVs.aspx?sc_lang=en">
+                          <img src="images/btn-atvs.png" width="67" height="70" alt="ATVs">
+                      </a>
+                  </td>
+                  <td>
+                      <a href="http://www.suzukicycles.com/Accessories.aspx?sc_lang=en">
+                          <img src="images/btn-accessories.png" width="114" height="70" alt="Accessories">
+                      </a>
+                  </td>
+                  <td>
+                      <a href="http://www.suzukicycles.com/Racing.aspx?sc_lang=en">
+                          <img src="images/btn-racing.png" width="86" height="70" alt="Racing">
+                      </a>
+                  </td>
+                </tr>
+                
+              </table>
+            </td>
+          </tr>
+      <!-- End Header -->
+
+
+      <!-- Start Content -->
+          <tr>
+            <td class="content">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                <tr>
+                  <td class="image">
+                    <a href="http://store.suzukicycles.com/"><img src="images/img-01.png" alt="Up to $3,400 customer cash on selected models" width="650" height="341"/></a>
+                  </td>
+                </tr>
+                <!-- end image -->
+
+                <tr>
+                  <td class="image" align="center">
+                    <a href="http://store.suzukicycles.com/"><img src="images/img-02.png" alt="Check out the 2015 DR-Z70" width="650" height="297"/></a>
+                  </td>
+                </tr>
+                <!-- end image -->
+
+                <tr>
+                  <td class="image">
+                    <a href="http://www.suzukicycles.com/offer.aspx"><img src="images/img-03.png" alt="See the 2015 line up GSX-R" width="650" height="411"/></a>
+                  </td>
+                </tr>
+                <!-- end image -->
+
+                <tr>
+                  <td class="image pb30">
+                    <a href="http://store.suzukicycles.com/"><img src="images/img-04.png" alt="Experience the 2016 RM-Z 250" width="650" height="432"/></a>
+                  </td>
+                </tr>
+                <!-- end image -->
+
+                <tr>
+                  <td class="ptb20 logos">
+                    <table class="yahoo-center" align="center" border="0" cellpadding="0" cellspacing="0">
+                    
+                      <tr>
+                        <td class="prl20">
+                          <a href="https://www.facebook.com/SuzukiCycles">
+                            <img src="images/icon-facebook.png" alt="facebook" width="26" height="26" />
+                            </a>
+                          </td>
+                        <td class="prl20">
+                          <a href="http://instagram.com/suzukicycles">
+                            <img src="images/icon-instagram.png" alt="instagram" width="26" height="26" />
+                          </a>
+                        </td>
+                        <td class="prl40 follow">FOLLOW SUZUKI CYCLES</td>
+                        <td class="prl20">
+                          <a href="https://twitter.com/suzukicycles">
+                            <img src="images/icon-twitter.png" alt="twitter" width="28" height="23" />
+                          </a>
+                        </td>
+                        <td class="prl20">
+                          <a href="https://www.youtube.com/user/SuzukiCycles">
+                            <img src="images/icon-youtube.png" alt="youtube" width="30" height="21" />
+                          </a>
+                        </td>
+                      </tr>
+                      
+                    </table> 
+                  </td>
+                </tr>
+
+
+              </table> 
+            </td>
+          </tr>
+      <!-- End Content -->
+
+      <!-- Start Footer -->
+           <tr>
+             <td class="footer p15">
+               <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+               <tr>
+                 <td class="footnote">At Suzuki, we want every ride to be safe and enjoyable. So always wear a helmet, eye protectionand protective clothing. Never ride under the influence of alcohol or other drugs. Avoid excessive speeds. Never engage in stunt riding. Study your owner’s manual and always inspect your Suzuki before riding. Take a riding skills course. For the course nearest you, call the Motorcycle Safety Foundation at <a class="no-link" href="#">1-800-446-9227</a>.</td>
+               </tr>
+
+               <tr>
+                 <td class="footnote">Suzuki, the “S” logo and Suzuki model and product names are Suzuki trademarks or ®. ©  Suzuki Motor of America, Inc. 2015.</td>
+               </tr>
+               <!-- end footnote -->
+
+
+               </table> 
+             </td>
+           </tr>
+      <!-- End Footer -->
+
+        </table>
+      </td>
+    </tr>
+
+  </table>
+  <!-- end table wrapper -->
+  
+</body>
+</html>

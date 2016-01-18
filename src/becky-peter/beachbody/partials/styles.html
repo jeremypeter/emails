@@ -58,11 +58,24 @@
       .yahoo-table-fix { margin: 0 auto; }
       /*fixes table width issue in yahoo*/
 
-      .black { color: #000001; }  
-      .white { color: #ffffff; }
+      .black { color: #666666; }  
+      .white,
+      .button .white { color: #ffffff; }
       .gold,
       a { color: #C3A14E;}
       .dark-gold { color: #866D31;}
+
+      .button.bg-gold {
+        background: #C3A14E;;
+        border-bottom: 3px solid #866D31;
+      }
+      .button.bg-gold a { border: 1px solid #C3A14E; }
+
+      .button.bg-black {
+        background: #000001;
+        border-bottom: none;
+      }
+      .button.bg-black a { border: 1px solid #000001; }
 
       .main-table { border: 1px solid #DCBD60;}
       /*.main-table { border: 1px solid #000001;}*/

@@ -4,6 +4,7 @@
       var $form = $('#mc-embedded-subscribe-form');
       var $subscribeBtn = $('.subscribe-button');
       var sent = false;
+      var hash = window.location.hash;
       var firstVisit;
       
       try {          
@@ -22,9 +23,7 @@
         }
       }
 
-      // alert(document.cookie)
-      // alert(firstVisit)
-      if(firstVisit){
+      if(hash === '#subscribe' || firstVisit){
         $('.ui.modal').modal('show');
       }
 
@@ -95,7 +94,10 @@
 
       $('.column').addClass('hide');
       $('.ui.success.message').removeClass('hide');
-   
+
+      // Facebook Tracking
+      fbq('track', 'CompleteRegistration');
+      
     }).fail(function(data){
       $('.ui.error').text('Could not connect to server. Please try again later');
     });
